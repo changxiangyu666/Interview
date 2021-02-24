@@ -17,4 +17,10 @@ var runningSum = function(nums) {
     });
     return nums1;
 };
+
+var runningSum1 = function(nums) {
+    let num = null;
+    let result = nums.map((item) => (num += item));
+    return result;
+};
 console.log(runningSum([1,2,3,4]))
